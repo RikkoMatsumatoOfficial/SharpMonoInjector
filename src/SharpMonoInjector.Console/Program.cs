@@ -42,7 +42,7 @@ namespace SharpMonoInjector.Console
         private static void PrintHelp()
         {
             const string help =
-                "SharpMonoInjector 2.2\r\n\r\n" +
+                "SharpMonoInjector 2.3\r\n\r\n" +
                 "Usage:\r\n" +
                 "smi.exe <inject/eject> <options>\r\n\r\n" +
                 "Options:\r\n" +

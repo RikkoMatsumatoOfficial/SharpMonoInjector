@@ -7,7 +7,7 @@
         xmlns:vm="clr-namespace:SharpMonoInjector.Gui.ViewModels"
         xmlns:cv="clr-namespace:SharpMonoInjector.Gui.Converters"
         mc:Ignorable="d"
-        Title="SharpMonoInjector 2.2" Height="352" Width="600">
+        Title="SharpMonoInjector 2.3" Height="352" Width="600">
 
     <Window.Resources>
         <cv:MonoProcessToStringConverter x:Key="MonoProcessToStringConverter"/>
