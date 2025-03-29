@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -64,6 +64,19 @@ namespace SharpMonoInjector
                     var funcs = GetExportedFunctions(handle, info.lpBaseOfDll);
 
                     if (funcs.Any(f => f.Name == "mono_get_root_domain")) {
+                        monoModule = info.lpBaseOfDll;
+                        return true;
+                    }
+                }
+                else if(path.ToString().IndexOf("mono-2.0-bdwgc", StringComparison.OrdinalIgnoreCase) > -1)
+                {
+                    if (!Native.GetModuleInformation(handle, ptrs[i], out MODULEINFO info, (uint)(size * ptrs.Length)))
+                        throw new InjectorException("Failed to get module information", new Win32Exception(Marshal.GetLastWin32Error()));
+
+                    var funcs = GetExportedFunctions(handle, info.lpBaseOfDll);
+
+                    if (funcs.Any(f => f.Name == "mono_get_root_domain"))
+                    {
                         monoModule = info.lpBaseOfDll;
                         return true;
                     }
