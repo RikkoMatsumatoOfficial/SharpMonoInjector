@@ -12,6 +12,7 @@ In order for the injector to work, the load/unload methods need to match the fol
 
     static void Method()
 
+[Examples](https://github.com/RikkoMatsumatoOfficial/SharpMonoInjectorExamples)
 
 [Join To My Discord Server](https://discord.gg/U2P5Hrcq9C)
 
