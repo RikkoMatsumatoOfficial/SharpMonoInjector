@@ -24,7 +24,7 @@ In order for the injector to work, the load/unload methods need to match the fol
         }
     }
 ```
-    _**P.S: Before Use, You Need Remember Names of Namespace, class and void function!!!**_
+    _**P.S: Before Use, You Need Remember Names of Namespace, class and void function!!! Thanks for Reading This Post Scriptum.**_
 
 [Examples](https://github.com/RikkoMatsumatoOfficial/SharpMonoInjectorExamples)
 
