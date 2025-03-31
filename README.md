@@ -10,7 +10,21 @@ Both x86 and x64 processes are supported.
 
 In order for the injector to work, the load/unload methods need to match the following method signature:
 
-    static void Method()
+    ```csharp
+    namespace Example
+    {
+        public class ClassPub
+        {
+            public void Load(){
+                // Create You're MonoBehaviour Class Cheat with Functions!!!
+            }
+            public void Unload(){
+                // Unload or Release You're Cheat!!!
+            }
+        }
+    }
+    ```
+    _**P.S: Before Use, You Need Remember Names of Namespace, class and void function!!!**_
 
 [Examples](https://github.com/RikkoMatsumatoOfficial/SharpMonoInjectorExamples)
 
