@@ -10,7 +10,7 @@ Both x86 and x64 processes are supported.
 
 In order for the injector to work, the load/unload methods need to match the following method signature:
 
-    ``` c#
+``` c#
     namespace Example
     {
         public class ClassPub
@@ -23,7 +23,7 @@ In order for the injector to work, the load/unload methods need to match the fol
             }
         }
     }
-    ```
+```
     _**P.S: Before Use, You Need Remember Names of Namespace, class and void function!!!**_
 
 [Examples](https://github.com/RikkoMatsumatoOfficial/SharpMonoInjectorExamples)
