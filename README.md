@@ -17,7 +17,7 @@ In order for the injector to work, the load/unload methods need to match the fol
         {
             public void Load()
             {
-                // befoure create this Cheeto, Create You're MonoBehaviour Class Cheat with Functions!!!
+                // before create this Cheeto, Create You're MonoBehaviour Class Cheat with Functions!!!
             }
             public void Unload()
             {
